@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffd23f">
+<title>¡Hola, Edgar!</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1f1b2d;--y:#ffd23f;--r:#d7263d;--mut:#6b6580}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--y);color:var(--ink);font:18px/1.5 Nunito,system-ui,sans-serif;padding:18px 16px 60px;padding-top:calc(18px + env(safe-area-inset-top,0px))}
+h1,h2,.btn{font-family:Fredoka,system-ui,sans-serif;font-weight:700;line-height:1.1;margin:0}
+.wrap{max-width:760px;margin:0 auto}
+.emo{display:flex;gap:12px;font-size:30px;flex-wrap:wrap;margin-bottom:14px}
+.dz{display:inline-block;animation:sway 1.6s ease-in-out infinite}
+@keyframes sway{50%{transform:rotate(14deg) translateY(-3px)}}
+@media(prefers-reduced-motion:reduce){.dz{animation:none}}
+.hero{background:var(--ink);color:#fff;border-radius:22px;padding:28px 22px;text-align:center;margin-bottom:18px}
+.hero h1{font-size:clamp(40px,12vw,72px);color:var(--y)}
+.hero p{font-size:20px;margin:8px 0 0}
+.msg{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:20px 22px;margin-bottom:18px}
+.msg p{margin:0 0 10px}.msg p:last-child{margin:0}
+.tip{background:#fff;border:3px dashed var(--ink);border-radius:18px;padding:14px 18px;margin-bottom:18px;font-size:16px}
+.grid{display:grid;gap:16px}
+@media(min-width:620px){.grid{grid-template-columns:1fr 1fr}}
+.hc{background:#fff;border:3px solid var(--ink);border-radius:18px;padding:20px 22px;box-shadow:5px 5px 0 var(--ink);display:flex;flex-direction:column;gap:10px}
+.hc .ic{font-size:44px}.hc h2{font-size:26px}.hc p{margin:0;color:var(--mut);flex:1}
+.btn{display:inline-block;text-align:center;text-decoration:none;background:var(--r);color:#fff;border:3px solid var(--ink);border-radius:30px;padding:10px 24px;font-size:20px;box-shadow:0 3px 0 var(--ink)}
+.btn:active{transform:translateY(2px)}
+.btn:focus-visible{outline:3px solid var(--r);outline-offset:2px}
+.foot{text-align:center;margin-top:22px;font-family:Fredoka,sans-serif;font-weight:700;font-size:24px}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <div class="tip">💡 <b>Совет:</b> чтобы испанский звучал естественно, открывай страницы на <b>компьютере</b> в браузере <b>Microsoft Edge</b> (голоса с пометкой «Natural», например Elena или Álvaro) или <b>Google Chrome</b> (голос «Google español»). В каждом уроке сверху можно <b>включить или выключить звук</b>, выбрать <b>голос</b> и <b>скорость</b>.</div>
+ <div class="emo"><span class="dz">💃</span><span>🌞</span><span>🥘</span><span>🍊</span><span>🌴</span></div>
+ <div class="hero"><h1>¡Hola, Edgar!</h1><p>¡Bienvenido a tu curso de español! 💛</p></div>
+ <div class="msg">
+  <p><b>¡Bienvenido, Edgar!</b> 🎉 Este es tu espacio para aprender español poco a poco, a tu ritmo, con ejemplos de la vida en España: el bar, el mercado, la playa, el tren.</p>
+  <p>Aquí hay clases con explicaciones, audio y ejercicios. Equivocarse es normal: cada error te enseña algo. <b>¡Tú puedes, Edgar!</b> 💪</p>
+  <p><span style="color:var(--mut)">Тут всё на испанском и русском. Если ошибся — рядом будет объяснение по-русски.</span></p>
+ </div>
+ <div class="grid">
+  <div class="hc"><div class="ic">👋</div><h2>Unidad 1: ¡Encantado!</h2><p>Saludos, países, profesiones, tú / usted. Приветствия, страны, профессии.</p><a class="btn" href="unidad1-encantado.html">Empezar →</a></div>
+  <div class="hc"><div class="ic">⚙️</div><h2>Unidad 2: Los verbos</h2><p>Глаголы в настоящем времени: -ar, -er, -ir, ser, estar, tener, ir, querer. С примерами из Испании.</p><a class="btn" href="unidad2-verbos.html">Empezar →</a></div>
+ </div>
+ <p class="foot">¡Mucho ánimo! 🚀</p>
+</div>
+</body>
+</html>
